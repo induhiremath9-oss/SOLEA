@@ -78,7 +78,7 @@ useEffect(() => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/products");
+        const response = await fetch("http:///api/products");
 
         const data = await response.json();
 
@@ -108,7 +108,7 @@ const trackOrder = async () => {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/orders/track/${trackingId}`
+      `http:///api/orders/track/${trackingId}`
     );
 
     const data = await response.json();
@@ -160,7 +160,7 @@ const trackOrder = async () => {
   }
 
     try {
-      const response = await fetch("http://localhost:5000/api/orders", {
+      const response = await fetch("http:///api/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -598,7 +598,7 @@ const trackOrder = async () => {
   onClick={async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/track/${order.trackingId}`
+        `http:///api/orders/track/${order.trackingId}`
       );
 
       const data = await response.json();
