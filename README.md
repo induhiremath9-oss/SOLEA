@@ -1,16 +1,68 @@
-# React + Vite
+# SOLEA 👟
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+SOLEA is a full-stack footwear e-commerce web application designed to provide a clean, modern, and user-friendly online shopping experience.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🛍️ Browse footwear products
+- 👟 Formal Shoes, Sneakers & Slippers collections
+- 👨 Men's and 👩 Women's product categories
+- 🔎 Product search
+- ❤️ Wishlist functionality
+- 🛒 Shopping cart with quantity management
+- 💳 Checkout and Cash on Delivery
+- 📦 Order placement and order history
+- 🚚 Order tracking with tracking ID
+- 👨‍💼 Admin dashboard for order management
+- 🔄 Order status updates
+- 📱 Responsive design for desktop and mobile devices
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React.js
+- Vite
+- React Router
+- HTML
+- CSS
+- JavaScript
 
-## Expanding the Oxlint configuration
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Development Tools
+- VS Code
+- Git
+- GitHub
+- Thunder Client
+
+## 📂 Project Structure
+
+```text
+SOLEA/
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── Admin.jsx
+│   ├── FormalShoes.jsx
+│   ├── Sneakers.jsx
+│   ├── Slippers.jsx
+│   └── main.jsx
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
