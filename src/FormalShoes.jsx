@@ -14,7 +14,7 @@ function FormalShoes() {
   const fetchFormalShoes = async () => {
       try {
         const response = await fetch(
-          "http:///api/products"
+          "/api/products"
         );
 
         const data = await response.json();

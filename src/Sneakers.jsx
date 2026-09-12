@@ -14,7 +14,7 @@ function Sneakers() {
   const fetchSneakers = async () => {
       try {
         const response = await fetch(
-          "http:///api/products"
+          "/api/products"
         );
 
         const data = await response.json();

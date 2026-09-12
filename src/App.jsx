@@ -78,7 +78,7 @@ useEffect(() => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http:///api/products");
+        const response = await fetch("/api/products");
 
         const data = await response.json();
 
@@ -160,7 +160,7 @@ const trackOrder = async () => {
   }
 
     try {
-      const response = await fetch("http:///api/orders", {
+      const response = await fetch("/api/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
