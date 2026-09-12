@@ -9,7 +9,7 @@ function Admin() {
   const fetchOrders = async () => {
     try {
       const response = await fetch(
-        "http:///api/orders"
+        "/api/orders"
       );
 
       const data = await response.json();
@@ -31,7 +31,7 @@ function Admin() {
   const updateStatus = async (orderId, status) => {
     try {
       const response = await fetch(
-        `http:///api/orders/${orderId}/status`,
+        `/api/orders/${orderId}/status`,
         {
           method: "PUT",
           headers: {

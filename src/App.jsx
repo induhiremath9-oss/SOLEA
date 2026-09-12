@@ -108,7 +108,7 @@ const trackOrder = async () => {
 
   try {
     const response = await fetch(
-      `http:///api/orders/track/${trackingId}`
+      `/api/orders/track/${trackingId}`
     );
 
     const data = await response.json();
@@ -598,7 +598,7 @@ const trackOrder = async () => {
   onClick={async () => {
     try {
       const response = await fetch(
-        `http:///api/orders/track/${order.trackingId}`
+        `/api/orders/track/${order.trackingId}`
       );
 
       const data = await response.json();
