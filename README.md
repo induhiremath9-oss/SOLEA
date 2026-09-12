@@ -1,6 +1,7 @@
 # SOLEA 👟
 
 SOLEA is a full-stack footwear e-commerce web application designed to provide a clean, modern, and user-friendly online shopping experience.
+🌐 Live Demo: https://solea-eight.vercel.app
 
 ## ✨ Features
 
@@ -16,6 +17,23 @@ SOLEA is a full-stack footwear e-commerce web application designed to provide a 
 - 👨‍💼 Admin dashboard for order management
 - 🔄 Order status updates
 - 📱 Responsive design for desktop and mobile devices
+
+- ## 📸 Screenshots
+
+### Home Page
+### Products
+### Shopping Cart & Checkout
+### Order Tracking
+### Admin Dashboard
+
+## 🚀 Future Enhancements
+
+- User authentication and secure profiles
+- Online payment integration
+- Product reviews and ratings
+- Inventory management
+- Email order notifications
+- Advanced product filtering
 
 ## 🛠️ Technologies Used
 
