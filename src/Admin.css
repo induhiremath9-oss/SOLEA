@@ -1,0 +1,389 @@
+/* ADMIN PAGE */
+
+.admin-page {
+  min-height: 100vh;
+  background: #f6f5f2;
+  padding: 40px;
+  color: #1f1f1f;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.admin-header h1 {
+  margin: 5px 0;
+  font-size: 36px;
+}
+
+.admin-header p {
+  color: #777;
+}
+
+.admin-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #9a8060;
+}
+
+.refresh-btn {
+  border: none;
+  background: #1f1f1f;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.refresh-btn:hover {
+  background: #444;
+}
+
+/* STATS */
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #e5e2dc;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.stat-card p {
+  color: #777;
+  margin: 0 0 10px;
+}
+
+.stat-card h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* ORDERS SECTION */
+
+.orders-section {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid #e5e2dc;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.orders-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.orders-heading h2 {
+  margin: 5px 0;
+  font-size: 25px;
+}
+
+.order-count {
+  background: #f1eee8;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* TABLE */
+
+.orders-table-wrapper {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th {
+  text-align: left;
+  padding: 15px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #888;
+  border-bottom: 1px solid #e5e2dc;
+}
+
+.orders-table td {
+  padding: 18px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.orders-table tr:hover {
+  background: #faf9f7;
+}
+
+.orders-table small {
+  color: #888;
+}
+
+.tracking-id {
+  font-size: 12px;
+  background: #f4f1ec;
+  padding: 6px 9px;
+  border-radius: 6px;
+}
+
+/* STATUS */
+
+.orders-table select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+
+/* MESSAGES */
+
+.admin-message {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .admin-page {
+    padding: 20px;
+  }
+
+  .admin-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .orders-section {
+    padding: 15px;
+  }
+}
+/* =========================================
+   MOBILE ADMIN ORDERS
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .admin-page {
+    width: 100%;
+    padding: 24px 14px;
+    box-sizing: border-box;
+  }
+
+  .admin-header {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .admin-header h1 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .admin-header > div > p:last-child {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .refresh-btn {
+    margin-top: 18px;
+  }
+
+  /* STAT CARDS */
+
+  .admin-stats {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+
+  .stat-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ORDERS SECTION */
+
+  .orders-section {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .orders-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .orders-heading h2 {
+    font-size: 30px;
+  }
+
+  .order-count {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  /* REMOVE TABLE HORIZONTAL SCROLL */
+
+  .orders-table-wrapper {
+    width: 100%;
+    overflow-x: visible !important;
+  }
+
+  .orders-table {
+    width: 100% !important;
+    min-width: 0 !important;
+    border-collapse: separate;
+    border-spacing: 0;
+    display: block;
+  }
+
+  /* Hide table heading */
+
+  .orders-table thead {
+    display: none;
+  }
+
+  .orders-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  /* Each order becomes a card */
+
+  .orders-table tbody tr {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 18px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+  }
+
+  .orders-table tbody td {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    padding: 11px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 13px;
+    text-align: right;
+    word-break: break-word;
+  }
+
+  .orders-table tbody td:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* Column labels */
+
+  .orders-table tbody td:nth-child(1)::before {
+    content: "ORDER";
+  }
+
+  .orders-table tbody td:nth-child(2)::before {
+    content: "CUSTOMER";
+  }
+
+  .orders-table tbody td:nth-child(3)::before {
+    content: "TRACKING";
+  }
+
+  .orders-table tbody td:nth-child(4)::before {
+    content: "AMOUNT";
+  }
+
+  .orders-table tbody td:nth-child(5)::before {
+    content: "PAYMENT";
+  }
+
+  .orders-table tbody td:nth-child(6)::before {
+    content: "STATUS";
+  }
+
+  .orders-table tbody td::before {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #777;
+    text-align: left;
+  }
+
+  /* Customer information */
+
+  .orders-table tbody td:nth-child(2) {
+    text-align: right;
+  }
+
+  /* Tracking ID */
+
+  .tracking-id {
+    max-width: 160px;
+    word-break: break-all;
+    text-align: right;
+  }
+
+  /* Status area */
+
+  .orders-table tbody td:nth-child(6) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .orders-table tbody td:nth-child(6)::before {
+    align-self: flex-start;
+  }
+
+  .view-details-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .orders-table tbody select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+  }
+}
